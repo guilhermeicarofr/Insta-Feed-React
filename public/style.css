@@ -1,0 +1,462 @@
+/* fonte roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* configs gerais */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FAFAFA;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #262626;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #262626;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    color: #139EF2;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #c7c7c7;
+    text-align: left;
+}
+strong {
+    font-weight: 500;
+}
+
+
+
+/* barra superior */
+.top-bar {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 0px 16px 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+.top-bar > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desktop-bar {
+    width: 935px;
+}
+.desktop-bar :nth-child(n) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.desktop-bar > :nth-child(1) {
+    width: 146px;
+}
+.desktop-bar > :nth-child(3) {
+    width: 128px;
+}
+.vert-division {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+.top-bar ion-icon {
+    width: 22px;
+    height: 22px;
+}
+.top-bar input {
+    width: 215px;
+    height: 28px;
+    margin: 13px 0px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    font-size: 12px;
+    text-align: center;
+    color: #979797;
+    font-weight: 400;
+}
+.top-bar img {
+    margin-top: 2.5px;
+    width: 103px;
+    height: 29px;
+}
+.mobile-bar,
+.mobile-bar ion-icon,
+.mobile-bar img {
+    display: none;
+}
+
+/* pagina de conteudo page = (feeds + sidebar) */
+.page {
+    width: 935px;
+    margin: 88px auto 0px auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* feed vertical feeds */
+.feeds {
+    width: 614px;
+}
+
+
+
+/* area de stories */
+.stories-feed {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 100%;
+    height: 118px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    padding-left: 18px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.stories-feed ion-icon {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+    color: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 46px;
+    right: 6px;
+    z-index: 2;
+}
+.stories-feed div {
+    width: 66px;
+    min-width: 66px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 14px;
+    text-align: center;
+}
+.storie-pic {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    top: 23px;
+    left: 5px;
+}
+.storie-background {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+}
+.stories-feed div h3 {
+    color: #262626;
+    position: absolute;
+    bottom: 14px;
+    margin: 0px auto;
+}
+
+
+/* cada post é divido em post-header, post-pic e post-footer */
+.post {
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+/* formatacao do header do post */
+.post-header {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.post-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
+.post-header h2 {
+    position: absolute;
+    top: 21px;
+    left: 64px;
+}
+.post-header ion-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 23px;
+    right: 17px;
+}
+
+/* imagem principal do post */
+.post-pic {
+    width: 612px;
+    height: 612px;
+}
+
+/* formatação do footer dos posts */
+.post-footer {
+    height: 76px;
+    position: relative;
+}
+.post-footer img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 14px;
+    left: 17px;
+}
+.post-footer h2 {
+    font-weight: 300;
+    position: absolute;
+    bottom: 17px;
+    left: 42px;
+}
+.like-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 44px;
+    left: 15px;
+}
+.comment-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 44px;
+    left: 50px;
+}
+.direct-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 44px;
+    left: 86px;
+}
+.save-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 44px;
+    right: 15px;
+}
+
+
+
+/* formatacoes na sidebar */
+.sidebar-column {
+    position: relative;
+    width: 293px;
+    height: auto;
+}
+.sidebar {
+    background-color: #FAFAFA;
+    border: 0px solid #FAFAFA;
+    width: 293px;
+    position: fixed;
+    margin-left: 29px;
+}
+
+/* area do perfil do usuario */
+.sidebar-profile {
+    width: 100%;
+    height: 56px;
+    margin: 22px auto 24px 0px;
+    position: relative;
+}
+.sidebar-profile img {
+    margin: 0px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.sidebar-profile strong {
+    color: #262626;
+}
+.sidebar-profile h2 {
+    color: #8e8e8e;
+    position: absolute;
+    top: 12px;
+    left: 70px;
+}
+
+/* area das sugestoes para seguir */
+.sidebar-sugestions {
+    padding-top: 17px;
+    width: 100%;
+    position: relative;
+}
+.sidebar-sugestions h3 {
+    color: #8e8e8e;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.sidebar-sugestions h4 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.sidebar-sugestions p {
+    margin-top: 16px;
+}
+
+/* formatacao das sugestoes */
+.sidebar-sugestions div {
+    width: 100%;
+    height: 32px;
+    margin: 16px auto;
+    position: relative;
+}
+.sidebar-sugestions div img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.sidebar-sugestions div h2 {
+    position: absolute;
+    top: 0px;
+    left: 43px;
+}
+.sidebar-sugestions div h3 {
+    position: absolute;
+    top: 20px;
+    left: 43px;
+}
+.sidebar-sugestions div h5 {
+    position: absolute;
+    top: 11px;
+    right: 0px;
+}
+
+
+
+/* formatacoes da bottom bar */
+.bottom-bar,
+.bottom-bar ion-icon {
+    display: none;
+}
+
+
+
+/* media query */
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+    .page {
+        width: 614px;
+    }
+}
+
+@media (max-width: 614px) {
+    .post-pic,
+    .feeds, .post,
+    .stories-feed, .post video {
+        width: 100vw
+    }
+    .page {
+        width: 100vw;
+        margin-top: 54px;
+    }
+    .post-pic {
+        height: 100vw;
+    }
+    .stories-feed {
+        height: 121px;
+        background-color: #FAFAFA;
+        margin-bottom: 0px;
+    }
+    .stories-feed ion-icon {
+        display: none;
+    }
+    
+
+    .desktop-bar,
+    .desktop-bar ion-icon,
+    .desktop-bar img,
+    .desktop-bar input,
+    .desktop-bar :nth-child(n) {
+        display: none;
+        width: 0px;
+    }
+    .mobile-bar,
+    .mobile-bar ion-icon,
+    .mobile-bar img {
+        display: initial;
+    }
+    .mobile-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom-bar {
+        display: initial;
+        background-color: #FAFAFA;
+        width: 100%;
+        height: 54px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bottom-bar ion-icon {
+        display: initial;
+        width: 22px;
+        height: 22px;
+        z-index: 2;
+    }
+}
+
+/* hover dos clicáveis */
+:hover img, ion-icon, h2, .stories-feed h3, h4, h5 {
+    cursor: pointer;
+}
