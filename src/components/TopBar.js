@@ -1,6 +1,6 @@
 function MobileBar() {
     return(
-        <div class="mobile-bar">
+        <div className="mobile-bar">
             <ion-icon name="logo-instagram"></ion-icon>
             <img src="images/logo.png" />
             <ion-icon name="paper-plane-outline"></ion-icon>
@@ -9,10 +9,10 @@ function MobileBar() {
 }
 function DesktopBar() {
     return(
-        <div class="desktop-bar">
+        <div className="desktop-bar">
                 <div>
                     <ion-icon name="logo-instagram"></ion-icon>
-                    <div class="vert-division"></div>
+                    <div className="vert-division"></div>
                     <img src="images/logo.png" />
                 </div>
                 <input type="text" placeholder="Pesquisar" />
@@ -29,7 +29,7 @@ function DesktopBar() {
 
 export default function TopBar() {
     return (
-        <div class="top-bar">
+        <div className="top-bar">
             <MobileBar />
             <DesktopBar />
         </div>

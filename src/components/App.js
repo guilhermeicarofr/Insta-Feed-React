@@ -1,10 +1,10 @@
 import TopBar from "./TopBar";
-
+import BottomBar from "./BottomBar";
 
 export default function App() {
     return (
 
-    <body>
+    <div class="content">
         <TopBar />
 
         <div class="page">
@@ -226,16 +226,10 @@ export default function App() {
             </div>
         </div>
 
-        <div class="bottom-bar">
-            <ion-icon name="home"></ion-icon>
-            <ion-icon name="search-outline"></ion-icon>
-            <ion-icon name="add-circle-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
-        </div>
+        <BottomBar />
 
 
-    </body>
+    </div>
 
 
 
