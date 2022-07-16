@@ -4,8 +4,6 @@ import TopBar from "./TopBar";
 export default function App() {
     return (
 
-
-
     <body>
         <TopBar />
 
@@ -238,12 +236,6 @@ export default function App() {
 
 
     </body>
-
-
-
-
-
-
 
 
 
