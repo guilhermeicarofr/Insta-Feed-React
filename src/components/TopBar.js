@@ -1,8 +1,10 @@
+import logo from './../images/app/logo.png';
+
 function MobileBar() {
     return(
         <div className="mobile-bar">
             <ion-icon name="logo-instagram"></ion-icon>
-            <img src="images/logo.png" />
+            <img src={logo} alt=""/>
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
     );
@@ -13,7 +15,7 @@ function DesktopBar() {
                 <div>
                     <ion-icon name="logo-instagram"></ion-icon>
                     <div className="vert-division"></div>
-                    <img src="images/logo.png" />
+                    <img src={logo} alt=""/>
                 </div>
                 <input type="text" placeholder="Pesquisar" />
                 <div>
@@ -25,7 +27,6 @@ function DesktopBar() {
             </div>
     );
 }
-
 
 export default function TopBar() {
     return (

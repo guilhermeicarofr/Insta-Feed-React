@@ -1,16 +1,24 @@
 import Storie from "./Storie";
 
-const stories = [
-    {username:"kishibe_rohan", img: "images/rohan.jpg"},
-    {username:"shingekiyo", img: "images/shingekyo.jpg"},
-    {username:"jo_josuke", img: "images/josuke.jpg"},
-    {username:"me_yukako", img: "images/yukako.jpg"},
-    {username:"kujo_j", img: "images/jotaro.jpg"},
-    {username:"giorno_gio", img: "images/giorno.jpg"},
-    {username:"okuyasu_niji", img: "images/okuyasu.jpg"},
-    {username:"joestar_jos", img: "images/joseph.jpg"}
-];
+import rohan from "./../images/users/rohan.jpg";
+import shingekiyo from "./../images/users/shin.jpg";
+import josuke from "./../images/users/josuke.jpg";
+import yukako from "./../images/users/yukako.jpg";
+import jotaro from "./../images/users/jotaro.jpg";
+import giorno from "./../images/users/giorno.jpg";
+import okuyasu from "./../images/users/okuyasu.jpg";
+import joseph from "./../images/users/joseph.jpg";
 
+const stories = [
+    {username:"kishibe_rohan", img:rohan},
+    {username:"shingekiyo", img:shingekiyo},
+    {username:"jo_josuke", img:josuke},
+    {username:"me_yukako", img:yukako},
+    {username:"kujo_j", img:jotaro},
+    {username:"giorno_gio", img:giorno},
+    {username:"okuyasu_niji", img:okuyasu},
+    {username:"joestar_jos", img:joseph}
+];
 
 export default function Stories() {
     return (
