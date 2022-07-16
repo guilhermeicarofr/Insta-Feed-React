@@ -324,49 +324,49 @@ strong {
 }
 
 /* area das sugestoes para seguir */
-.sidebar-sugestions {
+.sidebar-suggestions {
     padding-top: 17px;
     width: 100%;
     position: relative;
 }
-.sidebar-sugestions h3 {
+.sidebar-suggestions h3 {
     color: #8e8e8e;
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.sidebar-sugestions h4 {
+.sidebar-suggestions h4 {
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.sidebar-sugestions p {
+.sidebar-suggestions p {
     margin-top: 16px;
 }
 
 /* formatacao das sugestoes */
-.sidebar-sugestions div {
+.sidebar-suggestions div {
     width: 100%;
     height: 32px;
     margin: 16px auto;
     position: relative;
 }
-.sidebar-sugestions div img {
+.sidebar-suggestions div img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
-.sidebar-sugestions div h2 {
+.sidebar-suggestions div h2 {
     position: absolute;
     top: 0px;
     left: 43px;
 }
-.sidebar-sugestions div h3 {
+.sidebar-suggestions div h3 {
     position: absolute;
     top: 20px;
     left: 43px;
 }
-.sidebar-sugestions div h5 {
+.sidebar-suggestions div h5 {
     position: absolute;
     top: 11px;
     right: 0px;
