@@ -23,12 +23,12 @@ import rohan_videob from "./../images/posts/rohan-video.ogv";
 
 const posts = [
     {profile_img:josuke, profile_username:"jo_josuke", post_type:"image", post_file1:josuke_postimg, post_file2:"", like_img:okuyasu, like_username:"okuyasu_niji", like_count:"251"},
-    {profile_img:giorno, profile_username:"giorno_gio", post_type:"image", post_file1:giorno_postimg, post_file2:"", like_img:mista, like_username:"guido_mista", like_count:"5.165"},
-    {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"video", post_file1:rohan_videoa, post_file2:rohan_videob, like_img:kira, like_username:"yoshikage_kira", like_count:"43.213"},
-    {profile_img:yukako, profile_username:"me_yukako", post_type:"image", post_file1:yukako_postimg, post_file2:"", like_img:koichi, like_username:"koichi_hirose", like_count:"1.654"},
+    {profile_img:giorno, profile_username:"giorno_gio", post_type:"image", post_file1:giorno_postimg, post_file2:"", like_img:mista, like_username:"guido_mista", like_count:"5165"},
+    {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"video", post_file1:rohan_videoa, post_file2:rohan_videob, like_img:kira, like_username:"yoshikage_kira", like_count:"43213"},
+    {profile_img:yukako, profile_username:"me_yukako", post_type:"image", post_file1:yukako_postimg, post_file2:"", like_img:koichi, like_username:"koichi_hirose", like_count:"1654"},
     {profile_img:okuyasu, profile_username:"okuyasu_niji", post_type:"image", post_file1:okuyasu_postimg, post_file2:"", like_img:rohan, like_username:"kishibe_rohan", like_count:"591"},
     {profile_img:joseph, profile_username:"joestar_jos", post_type:"image", post_file1:joseph_postimg, post_file2:"", like_img:jotaro, like_username:"kujo_j", like_count:"68"},
-    {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"image", post_file1:rohan_postimg, post_file2:"", like_img:rohan, like_username:"kishibe_rohan", like_count:"29.864"}
+    {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"image", post_file1:rohan_postimg, post_file2:"", like_img:rohan, like_username:"kishibe_rohan", like_count:"29864"}
 ];
 
 

@@ -4,19 +4,25 @@ export default function Post(props) {
     
     //Post like state variable
     const [like, setLike] = React.useState("heart-outline");
+    const [likeplus, setLikeplus] = React.useState(0);
     //State variable like function
     function likePost(clicked) {
         console.log(clicked);
-        if(clicked==="file")
+        if(clicked==="file") {
             setLike("heart");
-        else if(clicked==="icon")
-            if(like==="heart")
+            setLikeplus(1);
+        } else if(clicked==="icon") {
+            if(like==="heart") {
                 setLike("heart-outline");
-            else if(like==="heart-outline")
+                setLikeplus(0);
+            } else if(like==="heart-outline") {
                 setLike("heart");
+                setLikeplus(1);
+            }
+        }
     }
 
-
+    
 
     //PostFile component image/video filetype sensitive
     function PostFile(props) {
@@ -50,7 +56,7 @@ export default function Post(props) {
                 <ion-icon name="paper-plane-outline"></ion-icon>
                 <ion-icon name="bookmark-outline"></ion-icon>
                 <img src={props.like_img} alt=""/>
-                <h2>Curtido por <strong>{props.like_username}</strong> e <strong>outras {props.like_count} pessoas</strong> </h2>
+                <h2>Curtido por <strong>{props.like_username}</strong> e <strong>outras {Number(props.like_count)+likeplus} pessoas</strong> </h2>
             </div>
         </div>
     );
