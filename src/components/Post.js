@@ -1,18 +1,39 @@
-function PostContent(props) {
-    if(props.type==="image")
-        return (
-            <img className="post-pic" src={props.file1} alt=""/>
-        );
-    else if(props.type==="video")
-        return (
-            <video width="612" height="345" autoPlay muted>
-                <source src={props.file1} type="video/mp4"/>
-                <source src={props.file2} type="video/ogg"/>
-            </video>
-        );
-}
+import React from "react";
 
 export default function Post(props) {
+    
+    //Post like state variable
+    const [like, setLike] = React.useState("heart-outline");
+    //State variable like function
+    function likePost(clicked) {
+        console.log(clicked);
+        if(clicked==="file")
+            setLike("heart");
+        else if(clicked==="icon")
+            if(like==="heart")
+                setLike("heart-outline");
+            else if(like==="heart-outline")
+                setLike("heart");
+    }
+
+
+
+    //PostFile component image/video filetype sensitive
+    function PostFile(props) {
+        if(props.type==="image")
+            return (
+                <img className="post-pic" onDoubleClick={()=>likePost("file")} src={props.file1} alt=""/>
+            );
+        else if(props.type==="video")
+            return (
+                <video onDoubleClick={()=>likePost("file")} width="612" height="345" autoPlay muted>
+                    <source src={props.file1} type="video/mp4"/>
+                    <source src={props.file2} type="video/ogg"/>
+                </video>
+            );
+    }
+
+    //Post main component
     return (
         <div className="post">
             <div className="post-header">
@@ -21,13 +42,13 @@ export default function Post(props) {
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
 
-            <PostContent type={props.post_type} file1={props.post_file1} file2={props.post_file2} />
+            <PostFile type={props.post_type} file1={props.post_file1} file2={props.post_file2} />
 
             <div className="post-footer">
-                <ion-icon className="like-icon" name="heart-outline"></ion-icon>
-                <ion-icon className="comment-icon" name="chatbubble-outline"></ion-icon>
-                <ion-icon className="direct-icon" name="paper-plane-outline"></ion-icon>
-                <ion-icon className="save-icon" name="bookmark-outline"></ion-icon>
+                <ion-icon onClick={()=>likePost("icon")} name={like}></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="bookmark-outline"></ion-icon>
                 <img src={props.like_img} alt=""/>
                 <h2>Curtido por <strong>{props.like_username}</strong> e <strong>outras {props.like_count} pessoas</strong> </h2>
             </div>

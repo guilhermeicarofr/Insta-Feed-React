@@ -252,28 +252,31 @@ strong {
     bottom: 17px;
     left: 42px;
 }
-.like-icon {
+.post-footer ion-icon:nth-of-type(1) {
     width: 22px;
     height: 22px;
     position: absolute;
     bottom: 44px;
     left: 15px;
 }
-.comment-icon {
+.post-footer ion-icon:nth-of-type(1)[name="heart"] {
+    color: red;
+}
+.post-footer ion-icon:nth-of-type(2) {
     width: 22px;
     height: 22px;
     position: absolute;
     bottom: 44px;
     left: 50px;
 }
-.direct-icon {
+.post-footer ion-icon:nth-of-type(3) {
     width: 22px;
     height: 22px;
     position: absolute;
     bottom: 44px;
     left: 86px;
 }
-.save-icon {
+.post-footer ion-icon:nth-of-type(4) {
     width: 22px;
     height: 22px;
     position: absolute;
