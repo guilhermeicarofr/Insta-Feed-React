@@ -139,13 +139,21 @@ strong {
     border-radius: 3px;
     width: 100%;
     height: 118px;
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 24px;
+}
+.stories-feed span {
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
-    overflow-x: hidden;
-    padding-left: 18px;
-    margin-bottom: 24px;
+    overflow-x: scroll;
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+.stories-feed span::-webkit-scrollbar {
+    display: none;
 }
 .stories-feed ion-icon {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
@@ -157,7 +165,7 @@ strong {
     right: 6px;
     z-index: 2;
 }
-.stories-feed div {
+.stories-feed span div {
     width: 66px;
     min-width: 66px;
     height: 100%;

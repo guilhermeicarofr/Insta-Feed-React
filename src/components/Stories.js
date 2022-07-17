@@ -21,12 +21,21 @@ const stories = [
 ];
 
 export default function Stories() {
+
+    //desktop version stories scroll button
+    function scroll() {
+        document.querySelector('.stories-feed span').scrollLeft += 100;
+    }
+
+
+
     return (
         <div className="stories-feed">
-            <ion-icon name="chevron-forward-circle"></ion-icon>
-            
-            {/* stories render */}            
-            {stories.sort(()=>Math.random()-0.5).map((storie) => <Storie username={storie.username} img={storie.img} />)}
+            <ion-icon onClick={scroll} name="chevron-forward-circle"></ion-icon>
+            <span>
+                {/* stories render */}            
+                {stories.sort(()=>Math.random()-0.5).map((storie) => <Storie username={storie.username} img={storie.img} />)}
+            </span>
         </div>
     );
 }
