@@ -31,7 +31,7 @@ export default function SideBar() {
                     <h4>Ver Tudo</h4>
 
                     {/* FollowSuggestions render */}
-                    {suggestions.map(suggestion => <FollowSuggestion username={suggestion.username} img={suggestion.img} info={suggestion.info} />)}
+                    {suggestions.sort(()=>Math.random()-0.5).map(suggestion => <FollowSuggestion username={suggestion.username} img={suggestion.img} info={suggestion.info} />)}
                     
                     <br/>
                     <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade Termos • Localizações • Contas mais relevantes • Hashtags Idioma</p>

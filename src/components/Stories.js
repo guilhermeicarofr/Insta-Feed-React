@@ -26,7 +26,7 @@ export default function Stories() {
             <ion-icon name="chevron-forward-circle"></ion-icon>
             
             {/* stories render */}            
-            {stories.map((storie) => <Storie username={storie.username} img={storie.img} />)}
+            {stories.sort(()=>Math.random()-0.5).map((storie) => <Storie username={storie.username} img={storie.img} />)}
         </div>
     );
 }

@@ -31,6 +31,8 @@ const posts = [
     {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"image", post_file1:rohan_postimg, post_file2:"", like_img:rohan, like_username:"kishibe_rohan", like_count:"29.864"}
 ];
 
+
+
 function postJSX(post) {
     return (
         <Post
@@ -50,7 +52,7 @@ export default function Feed() {
     return (
         <div className="feeds">
             <Stories />
-            {posts.map(postJSX)}
+            {posts.sort(()=>Math.random()-0.5).map(postJSX)}
         </div>
     );
 }
