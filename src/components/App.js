@@ -4,7 +4,7 @@ import Page from "./Page";
 
 export default function App() {
     return (
-        <div class="content">
+        <div className="content">
             <TopBar />
             <Page />
             <BottomBar />

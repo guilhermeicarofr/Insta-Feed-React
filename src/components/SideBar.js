@@ -5,7 +5,7 @@ import koichi from "./../images/users/koichi.jpg";
 import cinderella from "./../images/users/cinderella.jpeg";
 import kira from "./../images/users/kira.jpg";
 import toyohiro from "./../images/users/toyohiro.png";
-import trattoriatrussardi from "./../images/users/trattoriatrussardi.png";
+import trattoria from "./../images/users/trattoria.png";
 import mista from "./../images/users/mista.jpeg";
 import akira from "./../images/users/akira.jpg";
 
@@ -14,19 +14,19 @@ const suggestions = [
     {username:"cinderella_beauty_salon", img:cinderella, info:"Seguido por me_yukako"},
     {username:"yoshikage_kira", img:kira, info:"Novo no Instagram"},
     {username:"tower_toyohiro", img:toyohiro, info:"Segue você"},
-    {username:"trattoria_trussardi_italianfood", img:trattoriatrussardi, info:"Seguido por okuyasu_niji + 1"},
+    {username:"trattoria_trussardi_italianfood", img:trattoria, info:"Seguido por okuyasu_niji + 1"},
     {username:"guido_mista", img:mista, info:"Seguido por giorno_gio"},
     {username:"otoichi_akira_official", img:akira, info:"Novo no Instagram"}
 ];
 
 export default function SideBar() {
     return (
-        <div class="sidebar-column">
-            <div class="sidebar">
+        <div className="sidebar-column">
+            <div className="sidebar">
                 
                 <UserProfile name={userprofile.name} username={userprofile.username} img={userprofile.img} />
 
-                <div class="sidebar-suggestions">
+                <div className="sidebar-suggestions">
                     <h3><strong>Sugestões para você</strong></h3>
                     <h4>Ver Tudo</h4>
 

@@ -1,12 +1,11 @@
 function PostContent(props) {
-
-    if(props.type==="img")
+    if(props.type==="image")
         return (
             <img className="post-pic" src={props.file1} alt=""/>
         );
     else if(props.type==="video")
         return (
-            <video width="612" height="345" autoplay muted>
+            <video width="612" height="345" autoPlay muted>
                 <source src={props.file1} type="video/mp4"/>
                 <source src={props.file2} type="video/ogg"/>
             </video>
