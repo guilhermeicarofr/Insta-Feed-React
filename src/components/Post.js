@@ -22,8 +22,6 @@ export default function Post(props) {
         }
     }
 
-    
-
     //PostFile component image/video filetype sensitive
     function PostFile(props) {
         if(props.type==="image")

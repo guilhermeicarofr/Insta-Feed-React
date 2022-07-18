@@ -23,15 +23,22 @@ const stories = [
 export default function Stories() {
 
     //desktop version stories scroll button
-    function scroll() {
-        document.querySelector('.stories-feed span').scrollLeft += 100;
+    function scroll(direction) {
+        if(direction==="forward") {
+            document.querySelector('.stories-feed span').scrollLeft += 100;
+            document.querySelector('.stories-feed ion-icon:nth-of-type(1)').classList.toggle("hidden");
+            document.querySelector('.stories-feed ion-icon:nth-of-type(2)').classList.toggle("hidden");
+        } else if(direction==="back") {
+            document.querySelector('.stories-feed span').scrollLeft -= 100;
+            document.querySelector('.stories-feed ion-icon:nth-of-type(1)').classList.toggle("hidden");
+            document.querySelector('.stories-feed ion-icon:nth-of-type(2)').classList.toggle("hidden");
+        }
     }
-
-
 
     return (
         <div className="stories-feed">
-            <ion-icon onClick={scroll} name="chevron-forward-circle"></ion-icon>
+            <ion-icon onClick={()=>scroll("forward")} name="chevron-forward-circle"></ion-icon>
+            <ion-icon onClick={()=>scroll("back")} class="hidden" name="chevron-back-circle"></ion-icon>
             <span>
                 {/* stories render */}            
                 {stories.sort(()=>Math.random()-0.5).map((storie) => <Storie username={storie.username} img={storie.img} />)}

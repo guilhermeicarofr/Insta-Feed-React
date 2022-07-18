@@ -31,8 +31,6 @@ const posts = [
     {profile_img:rohan, profile_username:"kishibe_rohan", post_type:"image", post_file1:rohan_postimg, post_file2:"", like_img:rohan, like_username:"kishibe_rohan", like_count:"29864"}
 ];
 
-
-
 function postJSX(post) {
     return (
         <Post
